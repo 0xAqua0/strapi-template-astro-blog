@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blog_menu_items",
+  "info": {
+    "displayName": "MenuItem",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "linkTo": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent",
+        "_top"
+      ],
+      "required": true,
+      "default": "_self"
+    }
+  }
+}

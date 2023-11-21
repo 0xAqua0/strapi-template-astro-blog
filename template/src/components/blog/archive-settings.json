@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blog_archive_settings",
+  "info": {
+    "displayName": "ArchiveSettings",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "enablePagination": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "itemsPerPage": {
+      "type": "integer",
+      "default": 20,
+      "required": true
+    },
+    "dateFormat": {
+      "type": "string"
+    }
+  }
+}

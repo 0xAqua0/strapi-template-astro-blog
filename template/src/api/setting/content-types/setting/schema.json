@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "New Astro Blog"
+    },
+    "siteDescription": {
+      "type": "text"
+    },
+    "siteUrl": {
+      "type": "string"
+    },
+    "siteKeywords": {
+      "type": "string"
+    },
+    "siteLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "siteFavicon": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "archiveSettings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.archive-settings"
+    },
+    "commentSettings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.comment-settings"
+    },
+    "extraSettings": {
+      "type": "json"
+    },
+    "themeConfigs": {
+      "type": "json"
+    }
+  }
+}

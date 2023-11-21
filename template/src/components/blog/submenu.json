@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blog_submenus",
+  "info": {
+    "displayName": "Submenu",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "admin::user"
+    },
+    "publishDate": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::status.status"
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "page"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "coverImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contentType": {
+      "type": "string",
+      "required": true,
+      "default": "markdown"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "extraInfo": {
+      "type": "json"
+    }
+  }
+}

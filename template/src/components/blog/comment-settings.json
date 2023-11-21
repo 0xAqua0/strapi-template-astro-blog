@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_blog_comment_settings",
+  "info": {
+    "displayName": "CommentSettings",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "allowComment": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "enablePagination": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "commentsPerPage": {
+      "type": "integer",
+      "default": 50,
+      "required": true
+    },
+    "dateFormat": {
+      "type": "string"
+    }
+  }
+}
